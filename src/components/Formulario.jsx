@@ -11,8 +11,8 @@ const Formulario = () => {
           destino: "",
           ida: "",
           regreso: "",
-          adultos: "",
-          niños: "",
+          adultos: 0,
+          niños: 0,
         }}
         validate={(valores) => {
           let errores = {};
@@ -50,18 +50,18 @@ const Formulario = () => {
           }
 
           //validacion adultos
-          if (!valores.adultos) {
+          /*if (!valores.adultos) {
             errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          } else if (!/^[/^\d+$]{1,10}$/.test(valores.adultos)) {
+          } else if (!/^[1-30]{1,30}$/.test(valores.adultos)) {
             errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          }
+          }*/
 
           //validacion niños
-          if (!valores.niños) {
+          /*if (!valores.niños) {
             errores.niños = "Por favor ingresa cuantos niños viajaran";
-          } else if (!/^[/^\d*$]{0,10}$/.test(valores.niños)) {
+          } else if (!/^[0-10]{0,10}$/.test(valores.niños)) {
             errores.niños = "Solo puede contener números";
-          }
+          }*/
 
           return errores;
         }}
@@ -155,6 +155,8 @@ const Formulario = () => {
                 value={values.adultos}
                 onChange={handleChange}
                 onBlur={handleBlur}
+                min="0"
+                max="10"
               />
               {touched.adultos && errors.adultos && (
                 <div className="error">{errors.adultos}</div>
@@ -171,6 +173,8 @@ const Formulario = () => {
                 value={values.niños}
                 onChange={handleChange}
                 onBlur={handleBlur}
+                min="0"
+                max="5"
               />
               {touched.niños && errors.niños && (
                 <div className="error">{errors.niños}</div>
