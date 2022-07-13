@@ -1,18 +1,9 @@
 import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
-import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
-import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
-import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
-import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 
 const Formulario = () => {
-  const [value, setValue] = React.useState(new Date("2014-08-18T21:11:54"));
-
-  const handleChange = (newValue) => {
-    setValue(newValue);
-  };
-
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   return (
     <>
@@ -69,14 +60,7 @@ const Formulario = () => {
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
         }}
       >
-        {({
-          values,
-          handleSubmit,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-        }) => (
+        {({ values, errors, handleChange, setFieldValue }) => (
           <Form className="formulario">
             <div>
               <label htmlFor="origen">*Origen</label>
@@ -109,21 +93,11 @@ const Formulario = () => {
 
             <div>
               <label htmlFor="ida">*Ida</label>
-              <Field
-                type="text"
-                id="ida"
-                name="ida"
-                placeholder="Agrega fechas"
+              <DatePicker
+                selected={values.fecha}
+                name="startDate"
+                onChange={(date) => setFieldValue("fecha", date)}
               />
-              <LocalizationProvider dateAdapter={AdapterDateFns}>
-                <DesktopDatePicker
-                  label="Date desktop"
-                  inputFormat="MM/dd/yyyy"
-                  value={values.fecha}
-                  onChange={handleChange}
-                  renderInput={(params) => <TextField {...params} />}
-                />
-              </LocalizationProvider>
               <ErrorMessage
                 name="ida"
                 component={() => <div className="error">{errors.ida}</div>}
