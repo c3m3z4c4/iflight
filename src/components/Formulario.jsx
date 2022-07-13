@@ -15,7 +15,8 @@ const Formulario = () => {
           regreso: "",
           adultos: 0,
           niños: 0,
-          fecha: new Date(),
+          fechaIda: new Date(),
+          fechaRegreso: new Date(),
         }}
         validate={(valores) => {
           let errores = {};
@@ -94,9 +95,9 @@ const Formulario = () => {
             <div>
               <label htmlFor="ida">*Ida</label>
               <DatePicker
-                selected={values.fecha}
+                selected={values.fechaIda}
                 name="startDate"
-                onChange={(date) => setFieldValue("fecha", date)}
+                onChange={(date) => setFieldValue("fechaIda", date)}
               />
               <ErrorMessage
                 name="ida"
@@ -107,9 +108,9 @@ const Formulario = () => {
             <div>
               <label htmlFor="regreso">*Regreso</label>
               <DatePicker
-                selected={values.fecha}
+                selected={values.fechaRegreso}
                 name="startDate"
-                onChange={(date) => setFieldValue("fecha", date)}
+                onChange={(date) => setFieldValue("fechaRegreso", date)}
               />
               <ErrorMessage
                 name="regreso"
