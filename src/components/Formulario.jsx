@@ -60,7 +60,7 @@ const Formulario = () => {
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
         }}
       >
-        {({ values, errors, handleChange, setFieldValue }) => (
+        {({ values, errors, setFieldValue }) => (
           <Form className="formulario">
             <div>
               <label htmlFor="origen">*Origen</label>
@@ -106,11 +106,10 @@ const Formulario = () => {
 
             <div>
               <label htmlFor="regreso">*Regreso</label>
-              <Field
-                type="text"
-                id="regreso"
-                name="regreso"
-                placeholder="Agrega fechas"
+              <DatePicker
+                selected={values.fecha}
+                name="startDate"
+                onChange={(date) => setFieldValue("fecha", date)}
               />
               <ErrorMessage
                 name="regreso"
