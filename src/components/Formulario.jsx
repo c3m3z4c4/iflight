@@ -2,9 +2,17 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { DesktopDatePicker } from "@mui/x-date-pickers/DesktopDatePicker";
+import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 
 const Formulario = () => {
+  const [value, setValue] = React.useState(new Date("2014-08-18T21:11:54"));
+
+  const handleChange = (newValue) => {
+    setValue(newValue);
+  };
+
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   return (
     <>
@@ -16,6 +24,7 @@ const Formulario = () => {
           regreso: "",
           adultos: 0,
           niños: 0,
+          fecha: new Date(),
         }}
         validate={(valores) => {
           let errores = {};
@@ -60,7 +69,14 @@ const Formulario = () => {
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
         }}
       >
-        {({ errors }) => (
+        {({
+          values,
+          handleSubmit,
+          errors,
+          touched,
+          handleChange,
+          handleBlur,
+        }) => (
           <Form className="formulario">
             <div>
               <label htmlFor="origen">*Origen</label>
@@ -70,6 +86,7 @@ const Formulario = () => {
                 name="origen"
                 placeholder="¿Cuál es tú ubicación?"
               />
+
               <ErrorMessage
                 name="origen"
                 component={() => <div className="error">{errors.origen}</div>}
@@ -98,6 +115,15 @@ const Formulario = () => {
                 name="ida"
                 placeholder="Agrega fechas"
               />
+              <LocalizationProvider dateAdapter={AdapterDateFns}>
+                <DesktopDatePicker
+                  label="Date desktop"
+                  inputFormat="MM/dd/yyyy"
+                  value={values.fecha}
+                  onChange={handleChange}
+                  renderInput={(params) => <TextField {...params} />}
+                />
+              </LocalizationProvider>
               <ErrorMessage
                 name="ida"
                 component={() => <div className="error">{errors.ida}</div>}
