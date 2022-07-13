@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { Formik } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import TextField from "@material-ui/core/TextField";
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
@@ -48,144 +49,110 @@ const Formulario = () => {
           ) {
             errores.regreso = "La fecha de regreso solo puede contener fechas";
           }
-
-          //validacion adultos
-          /*if (!valores.adultos) {
-            errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          } else if (!/^[1-30]{1,30}$/.test(valores.adultos)) {
-            errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          }*/
-
-          //validacion niños
-          /*if (!valores.niños) {
-            errores.niños = "Por favor ingresa cuantos niños viajaran";
-          } else if (!/^[0-10]{0,10}$/.test(valores.niños)) {
-            errores.niños = "Solo puede contener números";
-          }*/
-
           return errores;
         }}
-        onSubmit={(valores, { resetForm }) => {
+        onSubmit={({ resetForm }) => {
           resetForm();
           console.log("Formulario enviado");
           cambiarFormularioEnviado(true);
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
         }}
       >
-        {({
-          values,
-          handleSubmit,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-        }) => (
-          <form className="formulario" onSubmit={handleSubmit}>
+        {({ errors }) => (
+          <Form className="formulario">
             <div>
               <label htmlFor="origen">*Origen</label>
-              <input
+              <Field
                 type="text"
                 id="origen"
                 name="origen"
                 placeholder="¿Cuál es tú ubicación?"
-                value={values.origen}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.origen && errors.origen && (
-                <div className="error">{errors.origen}</div>
-              )}
+              <ErrorMessage
+                name="origen"
+                component={() => <div className="error">{errors.origen}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="destino">*Destino</label>
-              <input
+              <Field
                 type="text"
                 id="destino"
                 name="destino"
                 placeholder="¿Dónde?"
-                value={values.destino}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.destino && errors.destino && (
-                <div className="error">{errors.destino}</div>
-              )}
+              <ErrorMessage
+                name="destino"
+                component={() => <div className="error">{errors.destino}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="ida">*Ida</label>
-              <input
+              <Field
                 type="text"
                 id="ida"
                 name="ida"
                 placeholder="Agrega fechas"
-                value={values.ida}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.ida && errors.ida && (
-                <div className="error">{errors.ida}</div>
-              )}
+              <ErrorMessage
+                name="ida"
+                component={() => <div className="error">{errors.ida}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="regreso">*Regreso</label>
-              <input
+              <Field
                 type="text"
                 id="regreso"
                 name="regreso"
                 placeholder="Agrega fechas"
-                value={values.regreso}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.regreso && errors.regreso && (
-                <div className="error">{errors.regreso}</div>
-              )}
+              <ErrorMessage
+                name="regreso"
+                component={() => <div className="error">{errors.regreso}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="adultos">*Adultos</label>
-              <input
+              <Field
                 type="number"
                 id="adultos"
                 name="adultos"
                 placeholder="¿Cuántos?"
-                value={values.adultos}
-                onChange={handleChange}
-                onBlur={handleBlur}
                 min="0"
                 max="10"
               />
-              {touched.adultos && errors.adultos && (
-                <div className="error">{errors.adultos}</div>
-              )}
+              <ErrorMessage
+                name="adultos"
+                component={() => <div className="error">{errors.adultos}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="niños">Niños</label>
-              <input
+              <Field
                 type="number"
                 id="niños"
                 name="niños"
                 placeholder="¿Cuántos?"
-                value={values.niños}
-                onChange={handleChange}
-                onBlur={handleBlur}
                 min="0"
                 max="5"
               />
-              {touched.niños && errors.niños && (
-                <div className="error">{errors.niños}</div>
-              )}
+              <ErrorMessage
+                name="niños"
+                component={() => <div className="error">{errors.niños}</div>}
+              />
             </div>
 
             <button type="submit">Buscar</button>
             {formularioEnviado && (
               <p className="exito">Formulario enviado con éxito!</p>
             )}
-          </form>
+          </Form>
         )}
       </Formik>
     </>
