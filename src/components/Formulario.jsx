@@ -3,7 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
-import { Grid } from '@mui/material';
+import { Grid } from "@mui/material";
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
@@ -16,7 +16,9 @@ const Formulario = () => {
         alignItems="center"
         justifyContent="center"
       >
+        <br />
         <Grid item md={8} xs={12}>
+          <h1>Busca disponibilidad</h1>
           <Formik
             initialValues={{
               origen: "",

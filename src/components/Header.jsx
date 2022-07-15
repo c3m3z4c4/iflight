@@ -8,8 +8,8 @@ function Header({titulo}) {
           <img
             src="/src/assets/IFlight Logo/IFlight Logo.png"
             alt="Foto Ali"
-            width="255"
-            height="220"
+            width="230"
+            height="200"
           />
           {titulo}
         </div>
