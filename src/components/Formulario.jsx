@@ -1,5 +1,8 @@
 import React, { useState } from "react";
-import { Formik } from "formik";
+import { Formik, Form, Field, ErrorMessage } from "formik";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import Swal from "sweetalert2";
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
@@ -13,6 +16,8 @@ const Formulario = () => {
           regreso: "",
           adultos: 0,
           niños: 0,
+          fechaIda: new Date(),
+          fechaRegreso: new Date(),
         }}
         validate={(valores) => {
           let errores = {};
@@ -32,160 +37,120 @@ const Formulario = () => {
               "El destino solo puede contener letras y espacios";
           }
 
-          //validacion ida
-          if (!valores.ida) {
-            errores.ida = "Por favor ingresa una fecha de ida";
-          } else if (
-            !/^[/^\d{1-2}-\d{1-2}-\d{2-4}$/]{1,10}$/.test(valores.ida)
-          ) {
-            errores.ida = "La fecha de ida solo puede contener fechas";
+          //validacion ida y regreso
+          if (valores.fechaIda > valores.fechaRegreso) {
+            Swal.fire(
+              "Error",
+              "La fecha de ida no puede ser mayor que la fecha de regreso",
+              "error"
+            );
           }
-          //validacion regreso
-          if (!valores.regreso) {
-            errores.regreso = "Por favor ingresa una fecha de regreso";
-          } else if (
-            !/^[/^\d{1-2}-\d{1-2}-\d{2-4}$/]{1,10}$/.test(valores.regreso)
-          ) {
-            errores.regreso = "La fecha de regreso solo puede contener fechas";
-          }
-
-          //validacion adultos
-          /*if (!valores.adultos) {
-            errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          } else if (!/^[1-30]{1,30}$/.test(valores.adultos)) {
-            errores.adultos = "Por favor ingresa cuantos adultos viajaran";
-          }*/
-
-          //validacion niños
-          /*if (!valores.niños) {
-            errores.niños = "Por favor ingresa cuantos niños viajaran";
-          } else if (!/^[0-10]{0,10}$/.test(valores.niños)) {
-            errores.niños = "Solo puede contener números";
-          }*/
 
           return errores;
         }}
-        onSubmit={(valores, { resetForm }) => {
+        onSubmit={({ resetForm }) => {
           resetForm();
           console.log("Formulario enviado");
           cambiarFormularioEnviado(true);
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
         }}
       >
-        {({
-          values,
-          handleSubmit,
-          errors,
-          touched,
-          handleChange,
-          handleBlur,
-        }) => (
-          <form className="formulario" onSubmit={handleSubmit}>
+        {({ values, errors, setFieldValue }) => (
+          <Form className="formulario">
             <div>
               <label htmlFor="origen">*Origen</label>
-              <input
+              <Field
                 type="text"
                 id="origen"
                 name="origen"
                 placeholder="¿Cuál es tú ubicación?"
-                value={values.origen}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.origen && errors.origen && (
-                <div className="error">{errors.origen}</div>
-              )}
+
+              <ErrorMessage
+                name="origen"
+                component={() => <div className="error">{errors.origen}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="destino">*Destino</label>
-              <input
+              <Field
                 type="text"
                 id="destino"
                 name="destino"
                 placeholder="¿Dónde?"
-                value={values.destino}
-                onChange={handleChange}
-                onBlur={handleBlur}
               />
-              {touched.destino && errors.destino && (
-                <div className="error">{errors.destino}</div>
-              )}
+              <ErrorMessage
+                name="destino"
+                component={() => <div className="error">{errors.destino}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="ida">*Ida</label>
-              <input
-                type="text"
-                id="ida"
-                name="ida"
-                placeholder="Agrega fechas"
-                value={values.ida}
-                onChange={handleChange}
-                onBlur={handleBlur}
+              <DatePicker
+                selected={values.fechaIda}
+                name="startDate"
+                onChange={(date) => setFieldValue("fechaIda", date)}
               />
-              {touched.ida && errors.ida && (
-                <div className="error">{errors.ida}</div>
-              )}
+              <ErrorMessage
+                name="ida"
+                component={() => <div className="error">{errors.ida}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="regreso">*Regreso</label>
-              <input
-                type="text"
-                id="regreso"
-                name="regreso"
-                placeholder="Agrega fechas"
-                value={values.regreso}
-                onChange={handleChange}
-                onBlur={handleBlur}
+              <DatePicker
+                selected={values.fechaRegreso}
+                name="endDate"
+                onChange={(date) => setFieldValue("fechaRegreso", date)}
               />
-              {touched.regreso && errors.regreso && (
-                <div className="error">{errors.regreso}</div>
-              )}
+              <ErrorMessage
+                name="regreso"
+                component={() => <div className="error">{errors.regreso}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="adultos">*Adultos</label>
-              <input
+              <Field
                 type="number"
                 id="adultos"
                 name="adultos"
-                placeholder="¿Cuántos?"
                 value={values.adultos}
-                onChange={handleChange}
-                onBlur={handleBlur}
+                placeholder="¿Cuántos?"
                 min="0"
                 max="10"
               />
-              {touched.adultos && errors.adultos && (
-                <div className="error">{errors.adultos}</div>
-              )}
+              <ErrorMessage
+                name="adultos"
+                component={() => <div className="error">{errors.adultos}</div>}
+              />
             </div>
 
             <div>
               <label htmlFor="niños">Niños</label>
-              <input
+              <Field
                 type="number"
                 id="niños"
                 name="niños"
-                placeholder="¿Cuántos?"
                 value={values.niños}
-                onChange={handleChange}
-                onBlur={handleBlur}
+                placeholder="¿Cuántos?"
                 min="0"
                 max="5"
               />
-              {touched.niños && errors.niños && (
-                <div className="error">{errors.niños}</div>
-              )}
+              <ErrorMessage
+                name="niños"
+                component={() => <div className="error">{errors.niños}</div>}
+              />
             </div>
 
             <button type="submit">Buscar</button>
             {formularioEnviado && (
               <p className="exito">Formulario enviado con éxito!</p>
             )}
-          </form>
+          </Form>
         )}
       </Formik>
     </>
