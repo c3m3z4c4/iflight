@@ -3,17 +3,38 @@ import { Formik, Form, Field, ErrorMessage } from "formik";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
+import {
+  Box,
+  Button,
+  Card,
+  CardContent,
+  CardHeader,
+  Divider,
+  Grid,
+  TextField,
+  Container
+} from '@mui/material';
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   return (
     <>
+        <Grid
+  container
+  spacing={0}
+  direction="column"
+  alignItems="center"
+  justifyContent="center"
+        >      
+          <Grid
+          item
+          md={8}
+          xs={12}
+        >
       <Formik
         initialValues={{
           origen: "",
           destino: "",
-          ida: "",
-          regreso: "",
           adultos: 0,
           niños: 0,
           fechaIda: new Date(),
@@ -48,8 +69,8 @@ const Formulario = () => {
 
           return errores;
         }}
-        onSubmit={({ resetForm }) => {
-          resetForm();
+        onSubmit={(values) => {
+          console.log(values);
           console.log("Formulario enviado");
           cambiarFormularioEnviado(true);
           setTimeout(() => cambiarFormularioEnviado(false), 4000);
@@ -153,6 +174,8 @@ const Formulario = () => {
           </Form>
         )}
       </Formik>
+      </Grid>      
+      </Grid>
     </>
   );
 };
