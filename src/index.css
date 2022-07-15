@@ -1,9 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+
 
 * {
 	padding: 0px;
 	margin: 0;
 	box-sizing: border-box;
+	color: slateblue;
+  font-size: large;
+	font-weight:700;
 }
 
 body {
@@ -20,7 +25,7 @@ body {
 
 .formulario {
 	min-width: 600px;
-	margin-top: 50px;
+	margin-top: 23px;
 	background: #fff;
 	border-radius: 5px;
 	padding: 20px;
@@ -90,4 +95,35 @@ body {
 
 .formulario input[type="radio"] {
 	width: auto;
+}
+
+.social-container {
+  background:  #eeeeee;
+  padding: 25px 50px;
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.twitter {
+  color: #49a1eb;
+}
+
+a.instagram {
+  color: black;
 }
