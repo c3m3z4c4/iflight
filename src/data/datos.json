@@ -1,0 +1,8484 @@
+{
+	"meta": {
+		"count": 60,
+		"links": {
+			"self": "https://test.api.amadeus.com/v2/shopping/flight-offers?originLocationCode=MEX&destinationLocationCode=BKK&departureDate=2022-11-01&adults=1"
+		}
+	},
+	"data": [
+		{
+			"type": "flight-offer",
+			"id": "1",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-14",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT36H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T06:45:00"
+							},
+							"arrival": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T14:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "408",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT5H15M",
+							"id": "82",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T22:50:00"
+							},
+							"arrival": {
+								"iataCode": "AUH",
+								"terminal": "1",
+								"at": "2022-11-02T19:35:00"
+							},
+							"carrierCode": "EY",
+							"number": "100",
+							"aircraft": {
+								"code": "351"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT12H45M",
+							"id": "83",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AUH",
+								"terminal": "3",
+								"at": "2022-11-02T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T08:05:00"
+							},
+							"carrierCode": "EY",
+							"number": "402",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT6H30M",
+							"id": "84",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "869.89",
+				"base": "532.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "869.89"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EY"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "869.89",
+						"base": "532.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "82",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"class": "N",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "83",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"class": "E",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "84",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"brandedFare": "YV",
+							"class": "E",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "2",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-14",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT36H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T06:45:00"
+							},
+							"arrival": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T14:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "408",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT5H15M",
+							"id": "85",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T16:00:00"
+							},
+							"arrival": {
+								"iataCode": "AUH",
+								"terminal": "1",
+								"at": "2022-11-02T12:30:00"
+							},
+							"carrierCode": "EY",
+							"number": "111",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT12H30M",
+							"id": "86",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AUH",
+								"terminal": "3",
+								"at": "2022-11-02T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T08:05:00"
+							},
+							"carrierCode": "EY",
+							"number": "402",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT6H30M",
+							"id": "87",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "869.89",
+				"base": "532.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "869.89"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EY"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "869.89",
+						"base": "532.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "85",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"class": "N",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "86",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"class": "E",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "87",
+							"cabin": "ECONOMY",
+							"fareBasis": "ERV1US",
+							"brandedFare": "YV",
+							"class": "E",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "3",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-10",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT35H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"at": "2022-11-01T09:50:00"
+							},
+							"arrival": {
+								"iataCode": "IST",
+								"at": "2022-11-02T10:35:00"
+							},
+							"carrierCode": "TK",
+							"number": "182",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT15H45M",
+							"stops": [
+								{
+									"iataCode": "CUN",
+									"duration": "PT1H40M",
+									"arrivalAt": "2022-11-01T13:05:00",
+									"departureAt": "2022-11-01T14:45:00"
+								}
+							],
+							"id": "80",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IST",
+								"at": "2022-11-02T20:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T10:10:00"
+							},
+							"carrierCode": "TK",
+							"number": "64",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT9H15M",
+							"id": "81",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1024.57",
+				"base": "650.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1024.57"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"TK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1024.57",
+						"base": "650.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "80",
+							"cabin": "ECONOMY",
+							"fareBasis": "LV3PXOW",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "81",
+							"cabin": "ECONOMY",
+							"fareBasis": "LV3PXOW",
+							"brandedFare": "RS",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "4",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-10",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT40H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"at": "2022-11-01T09:50:00"
+							},
+							"arrival": {
+								"iataCode": "IST",
+								"at": "2022-11-02T10:35:00"
+							},
+							"carrierCode": "TK",
+							"number": "182",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT15H45M",
+							"stops": [
+								{
+									"iataCode": "CUN",
+									"duration": "PT1H40M",
+									"arrivalAt": "2022-11-01T13:05:00",
+									"departureAt": "2022-11-01T14:45:00"
+								}
+							],
+							"id": "37",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IST",
+								"at": "2022-11-03T01:50:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T14:55:00"
+							},
+							"carrierCode": "TK",
+							"number": "68",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT9H5M",
+							"id": "38",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1024.57",
+				"base": "650.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1024.57"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"TK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1024.57",
+						"base": "650.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "37",
+							"cabin": "ECONOMY",
+							"fareBasis": "LV3PXOW",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "38",
+							"cabin": "ECONOMY",
+							"fareBasis": "LV3PXOW",
+							"brandedFare": "RS",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "5",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT27H25M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T19:40:00"
+							},
+							"arrival": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T00:40:00"
+							},
+							"carrierCode": "EK",
+							"number": "256",
+							"aircraft": {
+								"code": "77L"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT19H",
+							"stops": [
+								{
+									"iataCode": "BCN",
+									"duration": "PT1H45M",
+									"arrivalAt": "2022-11-02T13:25:00",
+									"departureAt": "2022-11-02T15:10:00"
+								}
+							],
+							"id": "91",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T03:05:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T12:05:00"
+							},
+							"carrierCode": "EK",
+							"number": "384",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT6H",
+							"id": "92",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1068.29",
+				"base": "700.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1068.29"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1068.29",
+						"base": "700.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "91",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "92",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "6",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT34H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T19:40:00"
+							},
+							"arrival": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T00:40:00"
+							},
+							"carrierCode": "EK",
+							"number": "256",
+							"aircraft": {
+								"code": "77L"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT19H",
+							"stops": [
+								{
+									"iataCode": "BCN",
+									"duration": "PT1H45M",
+									"arrivalAt": "2022-11-02T13:25:00",
+									"departureAt": "2022-11-02T15:10:00"
+								}
+							],
+							"id": "16",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T09:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T18:40:00"
+							},
+							"carrierCode": "EK",
+							"number": "372",
+							"aircraft": {
+								"code": "388"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT6H10M",
+							"id": "17",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1068.29",
+				"base": "700.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1068.29"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1068.29",
+						"base": "700.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "16",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "17",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "7",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 3,
+			"itineraries": [
+				{
+					"duration": "PT27H55M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T19:40:00"
+							},
+							"arrival": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T00:40:00"
+							},
+							"carrierCode": "EK",
+							"number": "256",
+							"aircraft": {
+								"code": "77L"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT19H",
+							"stops": [
+								{
+									"iataCode": "BCN",
+									"duration": "PT1H45M",
+									"arrivalAt": "2022-11-02T13:25:00",
+									"departureAt": "2022-11-02T15:10:00"
+								}
+							],
+							"id": "144",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T03:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T12:35:00"
+							},
+							"carrierCode": "EK",
+							"number": "376",
+							"aircraft": {
+								"code": "388"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT6H5M",
+							"id": "145",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1068.29",
+				"base": "700.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1068.29"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1068.29",
+						"base": "700.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "144",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "145",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "8",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 3,
+			"itineraries": [
+				{
+					"duration": "PT46H55M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T19:40:00"
+							},
+							"arrival": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T00:40:00"
+							},
+							"carrierCode": "EK",
+							"number": "256",
+							"aircraft": {
+								"code": "77L"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT19H",
+							"stops": [
+								{
+									"iataCode": "BCN",
+									"duration": "PT1H45M",
+									"arrivalAt": "2022-11-02T13:25:00",
+									"departureAt": "2022-11-02T15:10:00"
+								}
+							],
+							"id": "148",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "DXB",
+								"terminal": "3",
+								"at": "2022-11-03T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-04T07:35:00"
+							},
+							"carrierCode": "EK",
+							"number": "374",
+							"aircraft": {
+								"code": "388"
+							},
+							"operating": {
+								"carrierCode": "EK"
+							},
+							"duration": "PT6H",
+							"id": "149",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1068.29",
+				"base": "700.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1068.29"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1068.29",
+						"base": "700.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "148",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "149",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLSOSMX1",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "9",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT34H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T01:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:45:00"
+							},
+							"carrierCode": "NH",
+							"number": "179",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT15H45M",
+							"id": "78",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "803",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT6H45M",
+							"id": "79",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1115.79",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1115.79"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1115.79",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "78",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "79",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "10",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT35H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T01:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:45:00"
+							},
+							"carrierCode": "NH",
+							"number": "179",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT15H45M",
+							"id": "35",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "805",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "36",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1115.79",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1115.79"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1115.79",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "35",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "36",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "11",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT29H40M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:25:00"
+							},
+							"arrival": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T10:30:00"
+							},
+							"carrierCode": "AC",
+							"number": "997",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT6H5M",
+							"id": "126",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T14:50:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T16:50:00"
+							},
+							"carrierCode": "AC",
+							"number": "3",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT10H",
+							"id": "127",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "AC",
+							"number": "6251",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "128",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1119.89",
+				"base": "813.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1119.89"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AC"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1119.89",
+						"base": "813.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "126",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLYA02TG",
+							"brandedFare": "STANDARD",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "127",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "128",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"brandedFare": "STANDARD",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "12",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT26H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:25:00"
+							},
+							"arrival": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T10:30:00"
+							},
+							"carrierCode": "AC",
+							"number": "997",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT6H5M",
+							"id": "51",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T12:10:00"
+							},
+							"arrival": {
+								"iataCode": "HKG",
+								"terminal": "1",
+								"at": "2022-11-02T17:05:00"
+							},
+							"carrierCode": "AC",
+							"number": "7",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT13H55M",
+							"id": "52",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HKG",
+								"terminal": "1",
+								"at": "2022-11-02T18:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T20:40:00"
+							},
+							"carrierCode": "AC",
+							"number": "6129",
+							"aircraft": {
+								"code": "359"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT2H45M",
+							"id": "53",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1128.11",
+				"base": "817.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1128.11"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AC"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1128.11",
+						"base": "817.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "51",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLYA02TG",
+							"brandedFare": "STANDARD",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "52",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "53",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"brandedFare": "STANDARD",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "13",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT28H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:25:00"
+							},
+							"arrival": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T10:30:00"
+							},
+							"carrierCode": "AC",
+							"number": "997",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT6H5M",
+							"id": "56",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T12:10:00"
+							},
+							"arrival": {
+								"iataCode": "HKG",
+								"terminal": "1",
+								"at": "2022-11-02T17:05:00"
+							},
+							"carrierCode": "AC",
+							"number": "7",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT13H55M",
+							"id": "57",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HKG",
+								"terminal": "1",
+								"at": "2022-11-02T20:45:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:40:00"
+							},
+							"carrierCode": "AC",
+							"number": "6133",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT2H55M",
+							"id": "58",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1128.11",
+				"base": "817.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1128.11"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AC"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1128.11",
+						"base": "817.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "56",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLYA02TG",
+							"brandedFare": "STANDARD",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "57",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "58",
+							"cabin": "ECONOMY",
+							"fareBasis": "KLVY82TG",
+							"brandedFare": "STANDARD",
+							"class": "K",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "14",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT60H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T06:45:00"
+							},
+							"arrival": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T14:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "408",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT5H15M",
+							"id": "88",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-02T10:30:00"
+							},
+							"arrival": {
+								"iataCode": "AUH",
+								"terminal": "1",
+								"at": "2022-11-03T07:10:00"
+							},
+							"carrierCode": "EY",
+							"number": "3",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT12H40M",
+							"id": "89",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AUH",
+								"terminal": "3",
+								"at": "2022-11-03T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-04T08:05:00"
+							},
+							"carrierCode": "EY",
+							"number": "402",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT6H30M",
+							"id": "90",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1128.85",
+				"base": "781.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1128.85"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EY"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1128.85",
+						"base": "781.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "88",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLV1MX",
+							"class": "N",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "89",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLV1MX",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "90",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLV1MX",
+							"brandedFare": "YV",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "15",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT30H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "820",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "1",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "UA",
+							"number": "837",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT10H40M",
+							"id": "2",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "7971",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "3",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1141.21",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1141.21"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"UA"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1141.21",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "1",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "2",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "3",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"brandedFare": "ECOPARTREF",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "16",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT30H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "820",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "4",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T15:20:00"
+							},
+							"carrierCode": "UA",
+							"number": "7949",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT11H20M",
+							"id": "5",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "7971",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "6",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1141.21",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1141.21"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"UA"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1141.21",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "4",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "5",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "6",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"brandedFare": "ECOPARTREF",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "17",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT30H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:00:00"
+							},
+							"arrival": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T08:10:00"
+							},
+							"carrierCode": "UA",
+							"number": "1085",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT2H10M",
+							"id": "26",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T10:45:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:20:00"
+							},
+							"carrierCode": "UA",
+							"number": "7",
+							"aircraft": {
+								"code": "777"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT13H35M",
+							"id": "27",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "7971",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "28",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1141.21",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1141.21"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"UA"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1141.21",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "26",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "27",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "28",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"brandedFare": "ECOPARTREF",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "18",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT29H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "59",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T15:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "7",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT11H20M",
+							"id": "60",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "803",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT6H45M",
+							"id": "61",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "59",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "60",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "61",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "19",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT30H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "7",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T15:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "7",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT11H20M",
+							"id": "8",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "805",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "9",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "7",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "8",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "9",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "20",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT29H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "62",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "NH",
+							"number": "7013",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT10H40M",
+							"id": "63",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "803",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT6H45M",
+							"id": "64",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "62",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "63",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "64",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "21",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT29H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:00:00"
+							},
+							"arrival": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T08:10:00"
+							},
+							"carrierCode": "NH",
+							"number": "7161",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT2H10M",
+							"id": "69",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T10:45:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "6451",
+							"aircraft": {
+								"code": "777"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT13H35M",
+							"id": "70",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "803",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT6H45M",
+							"id": "71",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "69",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "70",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "71",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "22",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT30H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "10",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "NH",
+							"number": "7013",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT10H40M",
+							"id": "11",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "805",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "12",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "10",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "11",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "12",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "23",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT30H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:00:00"
+							},
+							"arrival": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T08:10:00"
+							},
+							"carrierCode": "NH",
+							"number": "7161",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT2H10M",
+							"id": "29",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T10:45:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "6451",
+							"aircraft": {
+								"code": "777"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT13H35M",
+							"id": "30",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "805",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "31",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1146.59",
+				"base": "895.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1146.59"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1146.59",
+						"base": "895.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "29",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "30",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "31",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLXRXSMH",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "24",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-15",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT29H34M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:01:00"
+							},
+							"arrival": {
+								"iataCode": "DFW",
+								"terminal": "D",
+								"at": "2022-11-01T08:55:00"
+							},
+							"carrierCode": "JL",
+							"number": "7233",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "AA"
+							},
+							"duration": "PT2H54M",
+							"id": "120",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "DFW",
+								"terminal": "0",
+								"at": "2022-11-01T11:40:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "2",
+								"at": "2022-11-02T15:30:00"
+							},
+							"carrierCode": "JL",
+							"number": "7011",
+							"aircraft": {
+								"code": "772"
+							},
+							"operating": {
+								"carrierCode": "AA"
+							},
+							"duration": "PT13H50M",
+							"id": "121",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "2",
+								"at": "2022-11-02T18:10:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:35:00"
+							},
+							"carrierCode": "JL",
+							"number": "707",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H25M",
+							"id": "122",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1193.83",
+				"base": "943.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1193.83"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"JL"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1193.83",
+						"base": "943.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "120",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "121",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "122",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "25",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-15",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT34H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T00:25:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:20:00"
+							},
+							"carrierCode": "JL",
+							"number": "8201",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT14H55M",
+							"id": "45",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "2",
+								"at": "2022-11-02T18:10:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:35:00"
+							},
+							"carrierCode": "JL",
+							"number": "707",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H25M",
+							"id": "46",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1317.58",
+				"base": "1087.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1317.58"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"JL"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1317.58",
+						"base": "1087.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "45",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "46",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "26",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-15",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT26H55M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T00:25:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:20:00"
+							},
+							"carrierCode": "JL",
+							"number": "8201",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT14H55M",
+							"id": "140",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HND",
+								"terminal": "3",
+								"at": "2022-11-02T11:20:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T16:20:00"
+							},
+							"carrierCode": "JL",
+							"number": "31",
+							"aircraft": {
+								"code": "773"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H",
+							"id": "141",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1327.14",
+				"base": "1087.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1327.14"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"JL"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1327.14",
+						"base": "1087.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "140",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "141",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "27",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-15",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT39H40M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T00:25:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:20:00"
+							},
+							"carrierCode": "JL",
+							"number": "8201",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT14H55M",
+							"id": "131",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HND",
+								"terminal": "3",
+								"at": "2022-11-03T00:05:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T05:05:00"
+							},
+							"carrierCode": "JL",
+							"number": "33",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H",
+							"id": "132",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1327.14",
+				"base": "1087.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1327.14"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"JL"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1327.14",
+						"base": "1087.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "131",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "132",
+							"cabin": "ECONOMY",
+							"fareBasis": "HLX00MN2",
+							"class": "H",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "28",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT27H40M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:25:00"
+							},
+							"arrival": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T10:30:00"
+							},
+							"carrierCode": "AC",
+							"number": "997",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT6H5M",
+							"id": "123",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "YVR",
+								"terminal": "M",
+								"at": "2022-11-01T12:55:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "1",
+								"at": "2022-11-02T16:20:00"
+							},
+							"carrierCode": "AC",
+							"number": "63",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AC"
+							},
+							"duration": "PT11H25M",
+							"id": "124",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "1",
+								"at": "2022-11-02T18:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:05:00"
+							},
+							"carrierCode": "AC",
+							"number": "6996",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "OZ"
+							},
+							"duration": "PT5H35M",
+							"id": "125",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1592.41",
+				"base": "1271.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1592.41"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AC"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1592.41",
+						"base": "1271.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "123",
+							"cabin": "ECONOMY",
+							"fareBasis": "LLYA02TG",
+							"brandedFare": "STANDARD",
+							"class": "L",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "124",
+							"cabin": "ECONOMY",
+							"fareBasis": "VLVK82FL",
+							"class": "V",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "125",
+							"cabin": "ECONOMY",
+							"fareBasis": "VLVK82FL",
+							"brandedFare": "FLEX",
+							"class": "V",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "29",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-09",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT33H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T07:10:00"
+							},
+							"arrival": {
+								"iataCode": "ORD",
+								"terminal": "5",
+								"at": "2022-11-01T12:25:00"
+							},
+							"carrierCode": "UA",
+							"number": "1594",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT4H15M",
+							"id": "13",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ORD",
+								"terminal": "1",
+								"at": "2022-11-01T17:35:00"
+							},
+							"arrival": {
+								"iataCode": "HND",
+								"at": "2022-11-02T20:45:00"
+							},
+							"carrierCode": "UA",
+							"number": "7911",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT13H10M",
+							"id": "14",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HND",
+								"at": "2022-11-03T00:05:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T05:10:00"
+							},
+							"carrierCode": "UA",
+							"number": "8003",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H5M",
+							"id": "15",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1623.96",
+				"base": "1360.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1623.96"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"UA"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1623.96",
+						"base": "1360.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "13",
+							"cabin": "ECONOMY",
+							"fareBasis": "RFXRXSMQ",
+							"class": "B",
+							"sliceDiceIndicator": "LOCAL_AVAILABILITY",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "14",
+							"cabin": "PREMIUM_ECONOMY",
+							"fareBasis": "RFXRXSMQ",
+							"class": "R",
+							"sliceDiceIndicator": "LOCAL_AVAILABILITY",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "15",
+							"cabin": "ECONOMY",
+							"fareBasis": "RFXRXSMQ",
+							"brandedFare": "PREMECOPRF",
+							"class": "Q",
+							"sliceDiceIndicator": "LOCAL_AVAILABILITY",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "30",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT40H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"at": "2022-11-01T04:55:00"
+							},
+							"arrival": {
+								"iataCode": "IST",
+								"at": "2022-11-02T05:40:00"
+							},
+							"carrierCode": "TK",
+							"number": "190",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT15H45M",
+							"stops": [
+								{
+									"iataCode": "CUN",
+									"duration": "PT1H40M",
+									"arrivalAt": "2022-11-01T08:10:00",
+									"departureAt": "2022-11-01T09:50:00"
+								}
+							],
+							"id": "65",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IST",
+								"at": "2022-11-02T20:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T10:10:00"
+							},
+							"carrierCode": "TK",
+							"number": "64",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT9H15M",
+							"id": "66",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1666.25",
+				"base": "1267.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1666.25"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"TK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1666.25",
+						"base": "1267.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "65",
+							"cabin": "ECONOMY",
+							"fareBasis": "OV3XOX",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "66",
+							"cabin": "ECONOMY",
+							"fareBasis": "OV3XOX",
+							"brandedFare": "FX",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "31",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT45H",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"at": "2022-11-01T04:55:00"
+							},
+							"arrival": {
+								"iataCode": "IST",
+								"at": "2022-11-02T05:40:00"
+							},
+							"carrierCode": "TK",
+							"number": "190",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT15H45M",
+							"stops": [
+								{
+									"iataCode": "CUN",
+									"duration": "PT1H40M",
+									"arrivalAt": "2022-11-01T08:10:00",
+									"departureAt": "2022-11-01T09:50:00"
+								}
+							],
+							"id": "18",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IST",
+								"at": "2022-11-03T01:50:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T14:55:00"
+							},
+							"carrierCode": "TK",
+							"number": "68",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "TK"
+							},
+							"duration": "PT9H5M",
+							"id": "19",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1666.25",
+				"base": "1267.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1666.25"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"TK"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1666.25",
+						"base": "1267.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "18",
+							"cabin": "ECONOMY",
+							"fareBasis": "OV3XOX",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "19",
+							"cabin": "ECONOMY",
+							"fareBasis": "OV3XOX",
+							"brandedFare": "FX",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "32",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT25H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T23:10:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T06:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "90",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT15H50M",
+							"id": "20",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T09:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T13:15:00"
+							},
+							"carrierCode": "KE",
+							"number": "95",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KE"
+							},
+							"duration": "PT5H45M",
+							"id": "21",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1983.62",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1983.62"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1983.62",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "20",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "21",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "Q",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "33",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT25H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T23:10:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T06:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "90",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT15H50M",
+							"id": "22",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T09:15:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T13:15:00"
+							},
+							"carrierCode": "KE",
+							"number": "657",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KE"
+							},
+							"duration": "PT6H",
+							"id": "23",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1983.62",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1983.62"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1983.62",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "22",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "23",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "Q",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "34",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT35H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T23:10:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T06:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "90",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT15H50M",
+							"id": "49",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T19:05:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T23:20:00"
+							},
+							"carrierCode": "KE",
+							"number": "653",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KE"
+							},
+							"duration": "PT6H15M",
+							"id": "50",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1983.62",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1983.62"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1983.62",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "49",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "50",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "Q",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "35",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT35H40M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T23:10:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T06:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "90",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT15H50M",
+							"id": "129",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T19:45:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T23:50:00"
+							},
+							"carrierCode": "KE",
+							"number": "8659",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KE"
+							},
+							"duration": "PT6H5M",
+							"id": "130",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1983.62",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1983.62"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1983.62",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "129",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "130",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "Q",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "36",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT33H55M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T23:10:00"
+							},
+							"arrival": {
+								"iataCode": "ICN",
+								"terminal": "2",
+								"at": "2022-11-03T06:00:00"
+							},
+							"carrierCode": "AM",
+							"number": "90",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT15H50M",
+							"id": "146",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ICN",
+								"terminal": "1",
+								"at": "2022-11-03T18:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T22:05:00"
+							},
+							"carrierCode": "OZ",
+							"number": "741",
+							"aircraft": {
+								"code": "333"
+							},
+							"operating": {
+								"carrierCode": "OZ"
+							},
+							"duration": "PT5H35M",
+							"id": "147",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "1983.62",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "1983.62"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "1983.62",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "146",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "147",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "V",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "37",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT22H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T16:25:00"
+							},
+							"carrierCode": "KL",
+							"number": "8991",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT10H50M",
+							"id": "102",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T10:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "875",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT10H35M",
+							"id": "103",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2026.37",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2026.37"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2026.37",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "102",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "103",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "38",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT45H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T16:25:00"
+							},
+							"carrierCode": "KL",
+							"number": "8991",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT10H50M",
+							"id": "118",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-03T15:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-04T08:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "87",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT11H35M",
+							"id": "119",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2026.37",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2026.37"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2026.37",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "118",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "119",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "39",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT23H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:55:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T15:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "686",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT10H10M",
+							"id": "39",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T16:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T09:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "85",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT11H35M",
+							"id": "40",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2026.37",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2026.37",
+				"additionalServices": [
+					{
+						"amount": "80.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2026.37",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "39",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "40",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "40",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT23H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:55:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T15:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "686",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT10H10M",
+							"id": "41",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T10:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "875",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT10H35M",
+							"id": "42",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2026.37",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2026.37",
+				"additionalServices": [
+					{
+						"amount": "80.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2026.37",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "41",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "42",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "41",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT24H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T19:55:00"
+							},
+							"arrival": {
+								"iataCode": "CDG",
+								"terminal": "2E",
+								"at": "2022-11-02T13:35:00"
+							},
+							"carrierCode": "AF",
+							"number": "179",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "AF"
+							},
+							"duration": "PT10H40M",
+							"id": "67",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "CDG",
+								"terminal": "2E",
+								"at": "2022-11-02T15:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T09:15:00"
+							},
+							"carrierCode": "AF",
+							"number": "166",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "AF"
+							},
+							"duration": "PT11H20M",
+							"id": "68",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2045.28",
+				"base": "1608.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2045.28",
+				"additionalServices": [
+					{
+						"amount": "80.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2045.28",
+						"base": "1608.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "67",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "68",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "42",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT29H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T14:35:00"
+							},
+							"arrival": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T20:00:00"
+							},
+							"carrierCode": "KL",
+							"number": "7667",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "DL"
+							},
+							"duration": "PT3H25M",
+							"id": "107",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T23:35:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T12:30:00"
+							},
+							"carrierCode": "KL",
+							"number": "622",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT7H55M",
+							"id": "108",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T15:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T08:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "87",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT11H35M",
+							"id": "109",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2052.38",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2052.38"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2052.38",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "107",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "108",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "109",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "43",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT30H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T14:35:00"
+							},
+							"arrival": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T20:00:00"
+							},
+							"carrierCode": "KL",
+							"number": "7667",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "DL"
+							},
+							"duration": "PT3H25M",
+							"id": "110",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T23:35:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T12:30:00"
+							},
+							"carrierCode": "KL",
+							"number": "622",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT7H55M",
+							"id": "111",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T16:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T09:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "85",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT11H35M",
+							"id": "112",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2052.38",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2052.38"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2052.38",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "110",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "111",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "112",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "44",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT30H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T14:35:00"
+							},
+							"arrival": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T20:00:00"
+							},
+							"carrierCode": "KL",
+							"number": "7667",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "DL"
+							},
+							"duration": "PT3H25M",
+							"id": "113",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "ATL",
+								"terminal": "I",
+								"at": "2022-11-01T23:35:00"
+							},
+							"arrival": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T12:30:00"
+							},
+							"carrierCode": "KL",
+							"number": "622",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT7H55M",
+							"id": "114",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AMS",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T10:05:00"
+							},
+							"carrierCode": "KL",
+							"number": "875",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "KL"
+							},
+							"duration": "PT10H35M",
+							"id": "115",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2052.38",
+				"base": "1599.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2052.38"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2052.38",
+						"base": "1599.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "113",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "114",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "115",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "45",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT45H50M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T22:25:00"
+							},
+							"arrival": {
+								"iataCode": "CDG",
+								"terminal": "2E",
+								"at": "2022-11-02T16:25:00"
+							},
+							"carrierCode": "AF",
+							"number": "8099",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT11H",
+							"id": "138",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "CDG",
+								"terminal": "2E",
+								"at": "2022-11-03T15:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-04T09:15:00"
+							},
+							"carrierCode": "AF",
+							"number": "166",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "AF"
+							},
+							"duration": "PT11H20M",
+							"id": "139",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2055.20",
+				"base": "1608.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2055.20"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AF"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2055.20",
+						"base": "1608.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "138",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "139",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFFWMX",
+							"brandedFare": "STDPLUS2",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "46",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT34H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T00:25:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:20:00"
+							},
+							"carrierCode": "AM",
+							"number": "58",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT14H55M",
+							"id": "47",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "2",
+								"at": "2022-11-02T18:10:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T23:35:00"
+							},
+							"carrierCode": "JL",
+							"number": "707",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H25M",
+							"id": "48",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2153.33",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2153.33"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2153.33",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "47",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "48",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "47",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT26H55M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T00:25:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:20:00"
+							},
+							"carrierCode": "AM",
+							"number": "58",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT14H55M",
+							"id": "142",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "HND",
+								"terminal": "3",
+								"at": "2022-11-02T11:20:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T16:20:00"
+							},
+							"carrierCode": "JL",
+							"number": "31",
+							"aircraft": {
+								"code": "773"
+							},
+							"operating": {
+								"carrierCode": "JL"
+							},
+							"duration": "PT7H",
+							"id": "143",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2162.89",
+				"base": "1837.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2162.89"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"AM"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2162.89",
+						"base": "1837.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "142",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "143",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNNN09CI",
+							"brandedFare": "CLASICA",
+							"class": "O",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "48",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-07-11",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT30H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:00:00"
+							},
+							"arrival": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T08:10:00"
+							},
+							"carrierCode": "UA",
+							"number": "1085",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT2H10M",
+							"id": "32",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T11:20:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T15:20:00"
+							},
+							"carrierCode": "UA",
+							"number": "1351",
+							"aircraft": {
+								"code": "777"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT14H",
+							"id": "33",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T18:40:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T00:05:00"
+							},
+							"carrierCode": "UA",
+							"number": "7971",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT7H25M",
+							"id": "34",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2422.49",
+				"base": "2127.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2422.49"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"UA"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2422.49",
+						"base": "2127.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "32",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFE0XSOB",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "33",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFE0XSOB",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "34",
+							"cabin": "ECONOMY",
+							"fareBasis": "BFE0XSOB",
+							"brandedFare": "ECONOMY",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "49",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-10-22",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT27H15M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T22:55:00"
+							},
+							"arrival": {
+								"iataCode": "MUC",
+								"terminal": "2",
+								"at": "2022-11-02T17:10:00"
+							},
+							"carrierCode": "LH",
+							"number": "521",
+							"aircraft": {
+								"code": "359"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT11H15M",
+							"id": "54",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "MUC",
+								"terminal": "2",
+								"at": "2022-11-02T22:45:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T15:10:00"
+							},
+							"carrierCode": "LH",
+							"number": "772",
+							"aircraft": {
+								"code": "359"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT10H25M",
+							"id": "55",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2605.39",
+				"base": "2121.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2605.39",
+				"additionalServices": [
+					{
+						"amount": "200.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"LH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2605.39",
+						"base": "2121.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "54",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "55",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"brandedFare": "ECOSAVER",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "50",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-10-22",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT29H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:00:00"
+							},
+							"arrival": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "LH",
+							"number": "499",
+							"aircraft": {
+								"code": "74H"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT10H40M",
+							"id": "72",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T15:50:00"
+							},
+							"arrival": {
+								"iataCode": "VIE",
+								"terminal": "3",
+								"at": "2022-11-02T17:10:00"
+							},
+							"carrierCode": "LH",
+							"number": "1240",
+							"aircraft": {
+								"code": "32A"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT1H20M",
+							"id": "73",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "VIE",
+								"terminal": "3",
+								"at": "2022-11-02T23:20:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T15:20:00"
+							},
+							"carrierCode": "LH",
+							"number": "6466",
+							"aircraft": {
+								"code": "772"
+							},
+							"operating": {
+								"carrierCode": "OS"
+							},
+							"duration": "PT10H",
+							"id": "74",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2627.15",
+				"base": "2121.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2627.15",
+				"additionalServices": [
+					{
+						"amount": "200.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"LH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2627.15",
+						"base": "2121.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "72",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "73",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "74",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"brandedFare": "ECOSAVER",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "51",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-10-22",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT29H20M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:00:00"
+							},
+							"arrival": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "LH",
+							"number": "499",
+							"aircraft": {
+								"code": "74H"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT10H40M",
+							"id": "75",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T16:50:00"
+							},
+							"arrival": {
+								"iataCode": "VIE",
+								"terminal": "3",
+								"at": "2022-11-02T18:10:00"
+							},
+							"carrierCode": "LH",
+							"number": "1242",
+							"aircraft": {
+								"code": "32A"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT1H20M",
+							"id": "76",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "VIE",
+								"terminal": "3",
+								"at": "2022-11-02T23:20:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T15:20:00"
+							},
+							"carrierCode": "LH",
+							"number": "6466",
+							"aircraft": {
+								"code": "772"
+							},
+							"operating": {
+								"carrierCode": "OS"
+							},
+							"duration": "PT10H",
+							"id": "77",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "2627.15",
+				"base": "2121.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "2627.15",
+				"additionalServices": [
+					{
+						"amount": "200.00",
+						"type": "CHECKED_BAGS"
+					}
+				]
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"LH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "2627.15",
+						"base": "2121.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "75",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "76",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "77",
+							"cabin": "ECONOMY",
+							"fareBasis": "BNCOWMX",
+							"brandedFare": "ECOSAVER",
+							"class": "B",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "52",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT27H45M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T01:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:45:00"
+							},
+							"carrierCode": "NH",
+							"number": "179",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT15H45M",
+							"id": "133",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T11:45:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T16:45:00"
+							},
+							"carrierCode": "NH",
+							"number": "5955",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "134",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3001.31",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3001.31"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3001.31",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "133",
+							"cabin": "PREMIUM_ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "G",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "134",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "53",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT33H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T01:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T06:45:00"
+							},
+							"carrierCode": "NH",
+							"number": "179",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT15H45M",
+							"id": "116",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:30:00"
+							},
+							"carrierCode": "NH",
+							"number": "5951",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "117",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3001.31",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3001.31"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3001.31",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "116",
+							"cabin": "PREMIUM_ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "G",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "117",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "54",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT28H25M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "93",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T15:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "7",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "NH"
+							},
+							"duration": "PT11H20M",
+							"id": "94",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:30:00"
+							},
+							"carrierCode": "NH",
+							"number": "5951",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "95",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3032.11",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3032.11"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3032.11",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "93",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "94",
+							"cabin": "PREMIUM_ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "G",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "95",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "55",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT28H30M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:00:00"
+							},
+							"arrival": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T08:10:00"
+							},
+							"carrierCode": "NH",
+							"number": "7161",
+							"aircraft": {
+								"code": "738"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT2H10M",
+							"id": "104",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "IAH",
+								"terminal": "E",
+								"at": "2022-11-01T10:45:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:20:00"
+							},
+							"carrierCode": "NH",
+							"number": "6451",
+							"aircraft": {
+								"code": "777"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT13H35M",
+							"id": "105",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:30:00"
+							},
+							"carrierCode": "NH",
+							"number": "5951",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "106",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3032.11",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3032.11"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3032.11",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "104",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "105",
+							"cabin": "PREMIUM_ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "G",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "106",
+							"cabin": "ECONOMY",
+							"fareBasis": "G1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "56",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT28H25M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "96",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T12:00:00"
+							},
+							"arrival": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "NH",
+							"number": "7013",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT10H40M",
+							"id": "97",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:30:00"
+							},
+							"carrierCode": "NH",
+							"number": "5951",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "98",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3032.11",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3032.11"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3032.11",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "96",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "97",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "98",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "57",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 4,
+			"itineraries": [
+				{
+					"duration": "PT28H25M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T05:05:00"
+							},
+							"arrival": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T09:05:00"
+							},
+							"carrierCode": "NH",
+							"number": "7369",
+							"aircraft": {
+								"code": "319"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT5H",
+							"id": "99",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "SFO",
+								"terminal": "I",
+								"at": "2022-11-01T10:50:00"
+							},
+							"arrival": {
+								"iataCode": "HND",
+								"terminal": "3",
+								"at": "2022-11-02T13:55:00"
+							},
+							"carrierCode": "NH",
+							"number": "7011",
+							"aircraft": {
+								"code": "789"
+							},
+							"operating": {
+								"carrierCode": "UA"
+							},
+							"duration": "PT11H5M",
+							"id": "100",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "NRT",
+								"terminal": "1",
+								"at": "2022-11-02T17:30:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-02T22:30:00"
+							},
+							"carrierCode": "NH",
+							"number": "5951",
+							"aircraft": {
+								"code": "788"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT7H",
+							"id": "101",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "3039.63",
+				"base": "2708.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "3039.63"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"NH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "3039.63",
+						"base": "2708.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "99",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "100",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "101",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y1WY",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "58",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT28H5M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:00:00"
+							},
+							"arrival": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "LH",
+							"number": "499",
+							"aircraft": {
+								"code": "74H"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT10H40M",
+							"id": "24",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "FRA",
+								"at": "2022-11-02T22:45:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T14:05:00"
+							},
+							"carrierCode": "6X",
+							"number": "9720",
+							"aircraft": {
+								"code": "744"
+							},
+							"operating": {
+								"carrierCode": "6X"
+							},
+							"duration": "PT9H20M",
+							"id": "25",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "5509.05",
+				"base": "5071.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "5509.05"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"6X"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "5509.05",
+						"base": "5071.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "24",
+							"cabin": "ECONOMY",
+							"fareBasis": "YFF77WW",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "25",
+							"cabin": "ECONOMY",
+							"fareBasis": "YFF77WW",
+							"brandedFare": "ECOFLEX",
+							"class": "M",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "59",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-11-01",
+			"numberOfBookableSeats": 9,
+			"itineraries": [
+				{
+					"duration": "PT31H10M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "1",
+								"at": "2022-11-01T21:00:00"
+							},
+							"arrival": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T14:40:00"
+							},
+							"carrierCode": "LH",
+							"number": "499",
+							"aircraft": {
+								"code": "74H"
+							},
+							"operating": {
+								"carrierCode": "LH"
+							},
+							"duration": "PT10H40M",
+							"id": "43",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "FRA",
+								"terminal": "1",
+								"at": "2022-11-02T20:55:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T17:10:00"
+							},
+							"carrierCode": "TG",
+							"number": "923",
+							"aircraft": {
+								"code": "77W"
+							},
+							"operating": {
+								"carrierCode": "TG"
+							},
+							"duration": "PT14H15M",
+							"stops": [
+								{
+									"iataCode": "HKT",
+									"duration": "PT1H30M",
+									"arrivalAt": "2022-11-03T14:10:00",
+									"departureAt": "2022-11-03T15:40:00"
+								}
+							],
+							"id": "44",
+							"numberOfStops": 1,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "5688.78",
+				"base": "5071.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "5688.78"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"LH"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "5688.78",
+						"base": "5071.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "43",
+							"cabin": "ECONOMY",
+							"fareBasis": "YFF77WW",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						},
+						{
+							"segmentId": "44",
+							"cabin": "ECONOMY",
+							"fareBasis": "YFF77WW",
+							"brandedFare": "ECOFLEX",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 1
+							}
+						}
+					]
+				}
+			]
+		},
+		{
+			"type": "flight-offer",
+			"id": "60",
+			"source": "GDS",
+			"instantTicketingRequired": false,
+			"nonHomogeneous": false,
+			"oneWay": false,
+			"lastTicketingDate": "2022-10-28",
+			"numberOfBookableSeats": 7,
+			"itineraries": [
+				{
+					"duration": "PT33H45M",
+					"segments": [
+						{
+							"departure": {
+								"iataCode": "MEX",
+								"terminal": "2",
+								"at": "2022-11-01T09:20:00"
+							},
+							"arrival": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T16:30:00"
+							},
+							"carrierCode": "AM",
+							"number": "402",
+							"aircraft": {
+								"code": "7M8"
+							},
+							"operating": {
+								"carrierCode": "AM"
+							},
+							"duration": "PT5H10M",
+							"id": "135",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "JFK",
+								"terminal": "4",
+								"at": "2022-11-01T22:50:00"
+							},
+							"arrival": {
+								"iataCode": "AUH",
+								"terminal": "1",
+								"at": "2022-11-02T19:35:00"
+							},
+							"carrierCode": "EY",
+							"number": "100",
+							"aircraft": {
+								"code": "351"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT12H45M",
+							"id": "136",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						},
+						{
+							"departure": {
+								"iataCode": "AUH",
+								"terminal": "3",
+								"at": "2022-11-02T22:35:00"
+							},
+							"arrival": {
+								"iataCode": "BKK",
+								"at": "2022-11-03T08:05:00"
+							},
+							"carrierCode": "EY",
+							"number": "402",
+							"aircraft": {
+								"code": "781"
+							},
+							"operating": {
+								"carrierCode": "EY"
+							},
+							"duration": "PT6H30M",
+							"id": "137",
+							"numberOfStops": 0,
+							"blacklistedInEU": false
+						}
+					]
+				}
+			],
+			"price": {
+				"currency": "EUR",
+				"total": "13446.91",
+				"base": "12617.00",
+				"fees": [
+					{
+						"amount": "0.00",
+						"type": "SUPPLIER"
+					},
+					{
+						"amount": "0.00",
+						"type": "TICKETING"
+					}
+				],
+				"grandTotal": "13446.91"
+			},
+			"pricingOptions": {
+				"fareType": [
+					"PUBLISHED"
+				],
+				"includedCheckedBagsOnly": true
+			},
+			"validatingAirlineCodes": [
+				"EY"
+			],
+			"travelerPricings": [
+				{
+					"travelerId": "1",
+					"fareOption": "STANDARD",
+					"travelerType": "ADULT",
+					"price": {
+						"currency": "EUR",
+						"total": "13446.91",
+						"base": "12617.00"
+					},
+					"fareDetailsBySegment": [
+						{
+							"segmentId": "135",
+							"cabin": "ECONOMY",
+							"fareBasis": "Y9N",
+							"brandedFare": "CLASICA",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "136",
+							"cabin": "ECONOMY",
+							"fareBasis": "YF1OW",
+							"brandedFare": "YF",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						},
+						{
+							"segmentId": "137",
+							"cabin": "ECONOMY",
+							"fareBasis": "YF1OW",
+							"brandedFare": "YF",
+							"class": "Y",
+							"includedCheckedBags": {
+								"quantity": 2
+							}
+						}
+					]
+				}
+			]
+		}
+	],
+	"dictionaries": {
+		"locations": {
+			"ORD": {
+				"cityCode": "CHI",
+				"countryCode": "US"
+			},
+			"MEX": {
+				"cityCode": "MEX",
+				"countryCode": "MX"
+			},
+			"BKK": {
+				"cityCode": "BKK",
+				"countryCode": "TH"
+			},
+			"HKG": {
+				"cityCode": "HKG",
+				"countryCode": "HK"
+			},
+			"CDG": {
+				"cityCode": "PAR",
+				"countryCode": "FR"
+			},
+			"AMS": {
+				"cityCode": "AMS",
+				"countryCode": "NL"
+			},
+			"IST": {
+				"cityCode": "IST",
+				"countryCode": "TR"
+			},
+			"JFK": {
+				"cityCode": "NYC",
+				"countryCode": "US"
+			},
+			"DXB": {
+				"cityCode": "DXB",
+				"countryCode": "AE"
+			},
+			"NRT": {
+				"cityCode": "TYO",
+				"countryCode": "JP"
+			},
+			"IAH": {
+				"cityCode": "HOU",
+				"countryCode": "US"
+			},
+			"VIE": {
+				"cityCode": "VIE",
+				"countryCode": "AT"
+			},
+			"AUH": {
+				"cityCode": "AUH",
+				"countryCode": "AE"
+			},
+			"YVR": {
+				"cityCode": "YVR",
+				"countryCode": "CA"
+			},
+			"DFW": {
+				"cityCode": "DFW",
+				"countryCode": "US"
+			},
+			"FRA": {
+				"cityCode": "FRA",
+				"countryCode": "DE"
+			},
+			"ICN": {
+				"cityCode": "SEL",
+				"countryCode": "KR"
+			},
+			"ATL": {
+				"cityCode": "ATL",
+				"countryCode": "US"
+			},
+			"MUC": {
+				"cityCode": "MUC",
+				"countryCode": "DE"
+			},
+			"SFO": {
+				"cityCode": "SFO",
+				"countryCode": "US"
+			},
+			"HND": {
+				"cityCode": "TYO",
+				"countryCode": "JP"
+			}
+		},
+		"aircraft": {
+			"7M8": "BOEING 737 MAX 8",
+			"32A": "AIRBUS A320 (SHARKLETS)",
+			"74H": "BOEING 747-8",
+			"77L": "BOEING 777-200LR",
+			"351": "AIRBUS A350-1000",
+			"781": "BOEING 787-10",
+			"772": "BOEING 777-200/200ER",
+			"333": "AIRBUS A330-300",
+			"388": "AIRBUS A380-800",
+			"773": "BOEING 777-300",
+			"77W": "BOEING 777-300ER",
+			"788": "BOEING 787-8",
+			"359": "AIRBUS A350-900",
+			"777": "BOEING 777-200/300",
+			"744": "BOEING 747-400",
+			"789": "BOEING 787-9",
+			"319": "AIRBUS A319",
+			"738": "BOEING 737-800"
+		},
+		"currencies": {
+			"EUR": "EURO"
+		},
+		"carriers": {
+			"AA": "AMERICAN AIRLINES",
+			"KL": "KLM ROYAL DUTCH AIRLINES",
+			"AC": "AIR CANADA",
+			"JL": "JAPAN AIRLINES",
+			"6X": "AMADEUS SIX",
+			"OS": "AUSTRIAN AIRLINES",
+			"AF": "AIR FRANCE",
+			"EK": "EMIRATES",
+			"DL": "DELTA AIR LINES",
+			"OZ": "ASIANA AIRLINES",
+			"AM": "AEROMEXICO",
+			"UA": "UNITED AIRLINES",
+			"TG": "THAI AIRWAYS INTERNATIONAL",
+			"EY": "ETIHAD AIRWAYS",
+			"TK": "TURKISH AIRLINES",
+			"NH": "ALL NIPPON AIRWAYS",
+			"KE": "KOREAN AIR",
+			"LH": "LUFTHANSA"
+		}
+	}
+}
