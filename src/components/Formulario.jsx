@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import Swal from "sweetalert2";
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
@@ -36,22 +37,15 @@ const Formulario = () => {
               "El destino solo puede contener letras y espacios";
           }
 
-          //validacion ida
-          if (!valores.ida) {
-            errores.ida = "Por favor ingresa una fecha de ida";
-          } else if (
-            !/^[/^\d{1-2}-\d{1-2}-\d{2-4}$/]{1,10}$/.test(valores.ida)
-          ) {
-            errores.ida = "La fecha de ida solo puede contener fechas";
+          //validacion ida y regreso
+          if (valores.fechaIda > valores.fechaRegreso) {
+            Swal.fire(
+              "Error",
+              "La fecha de ida no puede ser mayor que la fecha de regreso",
+              "error"
+            );
           }
-          //validacion regreso
-          if (!valores.regreso) {
-            errores.regreso = "Por favor ingresa una fecha de regreso";
-          } else if (
-            !/^[/^\d{1-2}-\d{1-2}-\d{2-4}$/]{1,10}$/.test(valores.regreso)
-          ) {
-            errores.regreso = "La fecha de regreso solo puede contener fechas";
-          }
+
           return errores;
         }}
         onSubmit={({ resetForm }) => {
@@ -109,7 +103,7 @@ const Formulario = () => {
               <label htmlFor="regreso">*Regreso</label>
               <DatePicker
                 selected={values.fechaRegreso}
-                name="startDate"
+                name="endDate"
                 onChange={(date) => setFieldValue("fechaRegreso", date)}
               />
               <ErrorMessage
@@ -124,6 +118,7 @@ const Formulario = () => {
                 type="number"
                 id="adultos"
                 name="adultos"
+                value={values.adultos}
                 placeholder="¿Cuántos?"
                 min="0"
                 max="10"
@@ -140,6 +135,7 @@ const Formulario = () => {
                 type="number"
                 id="niños"
                 name="niños"
+                value={values.niños}
                 placeholder="¿Cuántos?"
                 min="0"
                 max="5"
