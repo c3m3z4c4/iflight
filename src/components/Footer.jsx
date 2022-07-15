@@ -24,7 +24,7 @@ const Footer = () => {
             <img
               src="/src/assets/IFlight Logo/IFlight Logo.png"
               alt="Foto Ali"
-              width="150"
+              width="120"
               height="100"
             />
           </div>
