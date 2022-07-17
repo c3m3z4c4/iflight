@@ -1,12 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { Grid } from "@mui/material";
+import { authToken, apiCall } from "../api/index";
+
+
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+
+  useEffect(() => {
+    authToken();
+    apiCall();
+  }, []);
+
   return (
     <>
       <Grid

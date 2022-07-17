@@ -1,11 +1,82 @@
-const BASE_URL = 'https://test.api.amadeus.com/v2';
+import axios from 'axios';
 
-export default async function apiCall(url, params) {
- try {
-  const response = await fetch(`${BASE_URL}${url}`, params);
-  const data = await response.json();
-  return Promise.resolve(data);
- } catch (error) {
-  return Promise.reject(error);
- }
-};
+
+const clientId = import.meta.env.VITE_API_CLIENT_ID;
+const secret = import.meta.env.VITE_API_CLIENT_SECRET;
+const contentType = 'application/x-www-form-urlencoded';
+let urlencoded = new URLSearchParams();
+
+urlencoded.append('grant_type', 'client_credentials');
+urlencoded.append('client_id', clientId);
+urlencoded.append('client_secret', secret);
+urlencoded.append('Content-Type', contentType);
+
+let token = sessionStorage.getItem('auth_token');
+
+const authUrl = 'https://test.api.amadeus.com/v1/security/oauth2/token';
+
+
+const baseUrl = 'https://test.api.amadeus.com/v2/shopping/flight-offers';
+
+
+
+//Pruebas con variables fuera el scope
+
+let data
+
+export const authToken = async () => {
+  
+  try {
+    const dataAuth = await axios.post(authUrl, urlencoded);
+    console.log('Connection has status: ', dataAuth.data.state);
+    console.log(dataAuth.data.token_type);
+    
+    sessionStorage.setItem('auth_token', dataAuth.data.access_token);
+    
+  }
+  catch (error) {
+    return(error)
+  }
+} 
+
+
+export const apiCall = async () => {
+
+  console.log(`El token dentro de la API Call es ${token}`);
+  try { 
+    const res = await axios.get(
+      baseUrl,
+      {
+        params: {
+          'originLocationCode': 'MEX',
+          'destinationLocationCode': 'PER',
+          'departureDate': '2022-11-01',
+          'adults': '1'
+        },
+        headers:
+        {
+          "Content-Type": 'application/x-www-form-urlencoded',
+          "Authorization": "Bearer " + token,
+        },
+      }
+    ).then((response) => {
+      console.log(response);
+      data = response.data;
+      // console.log(data)
+    });
+    console.log(data);
+    } catch (error) {
+       console.log(`error ===>> ${error}`); 
+    }
+  }
+  
+  // let fetchHeaders = new Headers();
+  // fetchHeaders.append("Content-Type", 'application/x-www-form-urlencoded');
+  // fetchHeaders.append("Authorization", 'Bearer'+token);
+  
+  
+  // let urlEncForFetch = new URLSearchParams();
+  // urlEncForFetch.append('originLocationCode', 'MEX');
+  // urlEncForFetch.append('destinationLocationCode', 'PER');
+  // urlEncForFetch.append('departureDate', '2022-11-01');
+  // urlEncForFetch.append('adults-Type', '1');
