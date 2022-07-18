@@ -69,14 +69,3 @@ export const apiCall = async () => {
        console.log(`error ===>> ${error}`); 
     }
   }
-  
-  // let fetchHeaders = new Headers();
-  // fetchHeaders.append("Content-Type", 'application/x-www-form-urlencoded');
-  // fetchHeaders.append("Authorization", 'Bearer'+token);
-  
-  
-  // let urlEncForFetch = new URLSearchParams();
-  // urlEncForFetch.append('originLocationCode', 'MEX');
-  // urlEncForFetch.append('destinationLocationCode', 'PER');
-  // urlEncForFetch.append('departureDate', '2022-11-01');
-  // urlEncForFetch.append('adults-Type', '1');
