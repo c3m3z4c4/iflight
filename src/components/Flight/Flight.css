@@ -1,0 +1,58 @@
+.flight-container {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flight { 
+    display: flex;
+    margin: 15px;
+    border: 1px solid #B4C5E4;
+    border-radius: 8px;
+}
+
+.travel-flight {
+    min-height: 180px;
+    width: 600px;
+}
+
+.origin-flight, .destination-flight {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.origin-flight, .destination-flight, .days-flight, .total-flight  {
+    padding: 15px;
+}
+
+.origin-init, .origin-fin {
+    display: flex;
+    flex-direction: column;
+}
+
+.origin-route hr {
+    height: 1px;
+    width: 230px;
+    background-color: black;
+}
+
+.total-flight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    border-left: 1px solid rgb(221, 221, 221);   
+}
+
+.total-flight button {
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.3rem;
+    background-color: #8684FF;
+    color: white;
+}
+
