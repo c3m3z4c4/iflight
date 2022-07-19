@@ -27,11 +27,9 @@ let data
 export const authToken = async () => {
   
   try {
-    const dataAuth = await axios.post(authUrl, urlencoded);
-    console.log('Connection has status: ', dataAuth.data.state);
-    console.log(dataAuth.data.token_type);
-    
+    const dataAuth = await axios.post(authUrl, urlencoded); 
     sessionStorage.setItem('auth_token', dataAuth.data.access_token);
+    return dataAuth.data.access_token;
     
   }
   catch (error) {
@@ -40,18 +38,21 @@ export const authToken = async () => {
 } 
 
 
-export const apiCall = async () => {
 
-  console.log(`El token dentro de la API Call es ${token}`);
+
+export const apiCall = async (token, params) => {
+  let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-')
+  console.log(fechaSalida) 
+
   try { 
     const res = await axios.get(
       baseUrl,
       {
         params: {
-          'originLocationCode': 'MEX',
-          'destinationLocationCode': 'PER',
-          'departureDate': '2022-11-01',
-          'adults': '1'
+          'originLocationCode': params.origen,
+          'destinationLocationCode': params.destino,
+          'departureDate':fechaSalida,
+          'adults': params.adultos
         },
         headers:
         {
@@ -60,12 +61,13 @@ export const apiCall = async () => {
         },
       }
     ).then((response) => {
-      console.log(response);
-      data = response.data;
-      // console.log(data)
+      data = response.data.data;
+       console.log('esto es el dato:',data);
+      return Promise.resolve(data);
     });
-    console.log(data);
+   
+    console.log('Este es el res:', res);
     } catch (error) {
-       console.log(`error ===>> ${error}`); 
+    return error;
     }
   }
