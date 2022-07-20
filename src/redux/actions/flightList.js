@@ -23,14 +23,11 @@ const fetchFlightListError = (error) => ({
 //Action creators
 
 export const fetchFlightList = (params) => async (dispatch) => {
-  console.log(dispatch);
   try {
-    dispatch(fetchFlightListStart())
+    dispatch(fetchFlightListStart());
     const apiToken = await authToken();
-    console.log(`este es el token: ${apiToken}`);
-    const response = await apiCall(apiToken, params);
-    console.log(response);
-    dispatch(fetchFlightListComplete(response));
+    const response = await apiCall(params, apiToken);
+    dispatch(fetchFlightListComplete(response.data));
   } catch (error) {
     dispatch(fetchFlightListError(error));
   }

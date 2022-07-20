@@ -13,7 +13,7 @@ const flightListReducer = (state = initialState, action) => {
   console.log(state); 
   switch (action.type) {
     case FETCH_FLIGHT_LIST_START:
-      console.log(`resultsReducer ${action.type}`);
+      // console.log(`resultsReducer ${action.type}`);
       return {...state, isLoading: true, data:{}, error:{} }
     case FETCH_FLIGHT_LIST_COMPLETE: 
       return {...state, isloading: false, data: action.payload, error:{} }
