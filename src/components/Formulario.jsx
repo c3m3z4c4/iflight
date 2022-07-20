@@ -136,7 +136,7 @@ const Formulario = () => {
                     name="adultos"
                     value={values.adultos}
                     placeholder="¿Cuántos?"
-                    min="0"
+                    min="1"
                     max="10"
                   />
                   <ErrorMessage
@@ -174,6 +174,9 @@ const Formulario = () => {
             )}
           </Formik>
           <br />
+          <br />
+          <h1>¿No sabes a dónde quieres ir? Busca un vuelo</h1>
+
           <br />
         </Grid>
       </Grid>
