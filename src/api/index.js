@@ -27,11 +27,9 @@ let data
 export const authToken = async () => {
   
   try {
-    const dataAuth = await axios.post(authUrl, urlencoded);
-    console.log('Connection has status: ', dataAuth.data.state);
-    console.log(dataAuth.data.token_type);
-    
+    const dataAuth = await axios.post(authUrl, urlencoded); 
     sessionStorage.setItem('auth_token', dataAuth.data.access_token);
+    return dataAuth.data.access_token;
     
   }
   catch (error) {
@@ -39,19 +37,46 @@ export const authToken = async () => {
   }
 } 
 
+// const formatDate = (date) => {
+//   let d = new Date(date);
+//   let month = (d.getMonth() + 1).toString();
+//   let day = d.getDate().toString();
+//   let year = d.getFullYear();
+//   if (month.length < 2) {
+//     month = '0' + month;
+//   }
+//   if (day.length < 2) {
+//     day = '0' + day;
+//   }
+//   return [year, month, day].join('-');
+// }
 
-export const apiCall = async () => {
+// const convertTimestampToDate = (timestamp) => {
+//   const date = new Date(timestamp);
+//   //if the date is today, return how many hours or minutes ago 
+//   if (date.toDateString() === new Date().toDateString()) {
+//     const hours = Math.floor((new Date().getTime() - date.getTime()) / 1000 / 60 / 60);
+//     if (hours < 1) {
+//       return `${ Math.floor((new Date().getTime() - date.getTime()) / 1000 / 60) } minutes ago`;
+//     } else { return `${ hours } hours ago;` }
+//   } return date.toLocaleDateString();
+// };
 
-  console.log(`El token dentro de la API Call es ${token}`);
+
+export const apiCall = async (params, token) => {
+  let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-');
+  console.log(fechaSalida) 
+
   try { 
     const res = await axios.get(
       baseUrl,
       {
         params: {
-          'originLocationCode': 'MEX',
-          'destinationLocationCode': 'PER',
-          'departureDate': '2022-11-01',
-          'adults': '1'
+          'originLocationCode': params.origen,
+          'destinationLocationCode': params.destino,
+          'departureDate':fechaSalida,
+          'adults': params.adultos,
+          'children': params.niños ? params.niños : 0,
         },
         headers:
         {
@@ -60,12 +85,49 @@ export const apiCall = async () => {
         },
       }
     ).then((response) => {
-      console.log(response);
-      data = response.data;
-      // console.log(data)
+      data = response.data.data;
+       console.log('esto es el dato:',data);
+      return Promise.resolve(data);
     });
-    console.log(data);
+   
+    console.log('Este es el res:', res);
     } catch (error) {
-       console.log(`error ===>> ${error}`); 
+    return error;
     }
   }
+
+// export const apiCall = async (params, token) => {
+//   let fechaSalida = formatDate(params.fechaIda)
+//   // let fechaRegreso = formatDate(params.fechaRegreso);
+//   // console.log(params);
+//   // console.log(fechaSalida);
+//   // console.log(typeof fechaSalida);
+//   // console.log(fechaRegreso);
+//   try { 
+//     const res = await axios.get(
+//       baseUrl,
+//       {
+//         params: {
+//           'originLocationCode': params.origen,
+//           'destinationLocationCode': params.destino,
+//           'departureDate': fechaSalida,
+//           'adults': params.adultos,
+//           'children': params.niños,
+//         },
+//         headers:
+//         {
+//           "Content-Type": 'application/x-www-form-urlencoded',
+//           "Authorization": "Bearer " + token,
+//         },
+//       }
+//     ).then((response) => {
+//       data = response.data.data;
+//       console.log('esto es el dato:',data);
+//       return Promise.resolve(data);
+//     });
+   
+//     console.log('Este es el res:', res);
+//     } catch (error) {
+//     return error;
+//     }
+//   }
