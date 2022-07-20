@@ -22,7 +22,7 @@ const baseUrl = 'https://test.api.amadeus.com/v2/shopping/flight-offers';
 
 //Pruebas con variables fuera el scope
 
-let data
+// let data
 
 export const authToken = async () => {
   
@@ -37,19 +37,19 @@ export const authToken = async () => {
   }
 } 
 
-// const formatDate = (date) => {
-//   let d = new Date(date);
-//   let month = (d.getMonth() + 1).toString();
-//   let day = d.getDate().toString();
-//   let year = d.getFullYear();
-//   if (month.length < 2) {
-//     month = '0' + month;
-//   }
-//   if (day.length < 2) {
-//     day = '0' + day;
-//   }
-//   return [year, month, day].join('-');
-// }
+const formatDate = (date) => {
+  let d = new Date(date);
+  let month = (d.getMonth() + 1).toString();
+  let day = d.getDate().toString();
+  let year = d.getFullYear();
+  if (month.length < 2) {
+    month = '0' + month;
+  }
+  if (day.length < 2) {
+    day = '0' + day;
+  }
+  return [year, month, day].join('-');
+}
 
 // const convertTimestampToDate = (timestamp) => {
 //   const date = new Date(timestamp);
@@ -64,7 +64,8 @@ export const authToken = async () => {
 
 
 export const apiCall = async (params, token) => {
-  let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-');
+  // let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-');
+  let fechaSalida = formatDate(params.fechaIda); 
   console.log(fechaSalida) 
 
   try { 
@@ -85,12 +86,13 @@ export const apiCall = async (params, token) => {
         },
       }
     ).then((response) => {
-      data = response.data.data;
-       console.log('esto es el dato:',data);
-      return Promise.resolve(data);
+      // let data = response.data;
+      // console.log('esto es el dato:',data);
+      // return Promise.resolve(data);
     });
-   
-    console.log('Este es el res:', res);
+    return res.data
+    // console.log('Este es el res:', res);
+    // return res;
     } catch (error) {
     return error;
     }

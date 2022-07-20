@@ -9,14 +9,14 @@ const fetchFlightListStart = () => ({
   type: FETCH_FLIGHT_LIST_START
 });
 
-const fetchFlightListComplete = (payload) => ({
+const fetchFlightListComplete = ( payload ) => ({
   type: FETCH_FLIGHT_LIST_COMPLETE,
-  payload,
+  payload
 });
 
 const fetchFlightListError = (error) => ({
   type: FETCH_FLIGHT_LIST_ERROR,
-  error,
+  error
 });
 
 
@@ -28,6 +28,7 @@ export const fetchFlightList = (params) => async (dispatch) => {
     const apiToken = await authToken();
     const response = await apiCall(params, apiToken);
     dispatch(fetchFlightListComplete(response.data));
+    console.log(response);
   } catch (error) {
     dispatch(fetchFlightListError(error));
   }
