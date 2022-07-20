@@ -23,9 +23,9 @@ const Footer = () => {
           <div className="logo-container">
             <img
               src="/src/assets/IFlight Logo/IFlight Logo.png"
-              alt="Foto Ali"
-              width="120"
-              height="100"
+              alt="Foto Logo"
+              width="145"
+              height="150"
             />
           </div>
         </Grid>
@@ -33,6 +33,7 @@ const Footer = () => {
           <Box display="flex" justifyContent="flex-end">
             <div className="social-container">
               <h3>Contacta con nosotros</h3>
+              <br/>
               <a href="https://www.youtube.com/" className="youtube social">
                 <FontAwesomeIcon icon={faYoutube} size="2x" />
               </a>
