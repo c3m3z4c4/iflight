@@ -86,13 +86,12 @@ export const apiCall = async (params, token) => {
         },
       }
     ).then((response) => {
-      // let data = response.data;
-      // console.log('esto es el dato:',data);
-      // return Promise.resolve(data);
+      let data = response.data;
+      console.log('esto es el dato:',data);
+      return data;
     });
-    return res.data
-    // console.log('Este es el res:', res);
-    // return res;
+    console.log('Este es el res:', res);
+    return res;
     } catch (error) {
     return error;
     }
