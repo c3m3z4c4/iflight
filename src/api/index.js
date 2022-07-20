@@ -64,8 +64,8 @@ const formatDate = (date) => {
 
 
 export const apiCall = async (params, token) => {
-  // let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-');
-  let fechaSalida = formatDate(params.fechaIda); 
+  let fechaSalida = new Date(params.fechaIda).toLocaleDateString('en-GB').split('/').reverse().join('-');
+  // let fechaSalida = formatDate(params.fechaIda); 
   console.log(fechaSalida) 
 
   try { 
