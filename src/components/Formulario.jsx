@@ -4,9 +4,22 @@ import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
 import { Grid } from "@mui/material";
+import { authToken, apiCall } from "../api/index";
+import { useDispatch } from 'react-redux';
+import {addSearchItem, fetchFlightList } from '../redux/actions/flightList';
+
+
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
+  const dispatch = useDispatch();
+
+  // useEffect(() => {
+  //   // authToken();
+  //   // apiCall();
+  //   dispatch(fetchFlightListStart());
+  // }, []);
+
   return (
     <>
       <Grid
@@ -23,7 +36,7 @@ const Formulario = () => {
             initialValues={{
               origen: "",
               destino: "",
-              adultos: 0,
+              adultos: 1,
               niños: 0,
               fechaIda: new Date(),
               fechaRegreso: new Date(),
@@ -59,10 +72,13 @@ const Formulario = () => {
               return errores;
             }}
             onSubmit={(values) => {
-              console.log(values);
+
+              // console.log(values);
               console.log("Formulario enviado");
               cambiarFormularioEnviado(true);
               setTimeout(() => cambiarFormularioEnviado(false), 4000);
+              dispatch(addSearchItem(values));
+              dispatch(fetchFlightList(values));
             }}
           >
             {({ values, errors, setFieldValue }) => (
