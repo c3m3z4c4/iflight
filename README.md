@@ -68,7 +68,7 @@ Requiere credenciales de una api de (Amadeus for devs)[https://developers.amadeu
 
 ### Despliegue
 
-El deploy del sitio fue realizado en Heroku, Para acceder , puede dar click [Aquí]()
+El deploy del sitio fue realizado en Heroku, Para acceder , puede dar click [Aquí](https://i-flight.herokuapp.com/)
 
 # [Sitio I flight]()
 
