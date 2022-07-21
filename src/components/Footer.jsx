@@ -22,7 +22,7 @@ const Footer = () => {
         <Grid item md={6} xs={12}>
           <div className="logo-container">
             <img
-              src="/src/assets/IFlight Logo/IFlight Logo.png"
+              src="/assets/IFlight Logo/IFlight Logo.png"
               alt="Foto Logo"
               width="145"
               height="150"
