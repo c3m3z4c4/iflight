@@ -12,14 +12,15 @@ function App() {
    <BrowserRouter>
       <div className="App" style={{backgroundImage: `url('/assets/IFlight Logo/vuelo.jpg')`}} >
         <Header/>
-      </div>
+    
       <Routes>
         <Route path="/" element={<Formulario/>} />
         <Route path="/vuelos" element={<FlightListContainer />} />
         <Route path="/vuelos/detalle" element={<FlightDetailContainer/>} />
         <Route path ="/*" element ={<Navigate to ="/" replace/>}/>
       </Routes>
-      <Footer/>
+      </div>
+      <Footer />
     </BrowserRouter>
   );
 }
