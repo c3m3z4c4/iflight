@@ -6,7 +6,7 @@ function Header({titulo}) {
       <div className="nav-wrapper light-blue darken-2">
         <div className="logo-iflight">
           <img
-            src="/assets/logo.png"
+            src="/src/assets/IFlight Logo/IFlight Logo.png"
             alt="Foto Ali"
             width="230"
             height="200"

@@ -10,7 +10,7 @@ import "./pages/landing/index.css";
 function App() {
   return (
    <BrowserRouter>
-      <div className="App" style={{backgroundImage: `url('/assets/IFlight Logo/vuelo.jpg')`}} >
+      <div className="App" style={{backgroundImage: `url('/src/assets/IFlight Logo/vuelo.jpg')`}} >
         <Header/>
       </div>
       <Routes>
