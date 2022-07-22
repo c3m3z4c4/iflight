@@ -10,10 +10,11 @@
     justify-content: space-around;
     align-items: center;
     margin: 30px;
-    border: 1px solid #B4C5E4;
+    border: 2px solid #B4C5E4;
     border-radius: 8px;
     min-height: 80px;
     width: 600px;
+    background-color: white;
 }
 
 .origin-route-detail, .destination-route-detail{
