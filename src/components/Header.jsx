@@ -4,7 +4,7 @@ function Header({titulo}) {
   return (
     <nav>
       <div className="nav-wrapper light-blue darken-2">
-        <div className="logo-iflight">
+        <div className="logo-iflight" style={{ backgroundColor: `#52a6e2` }}>
           <img
             src="/assets/IFlight Logo/IFlight Logo.png"
             alt="Foto Ali"

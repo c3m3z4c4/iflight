@@ -10,14 +10,11 @@ import Landing from "./components/Landing/Landing";
 function App() {
   return (
     <BrowserRouter>
-      <div
-        className="App"
-        style={{ backgroundImage: `url('/assets/IFlight Logo/vuelo.jpg')` }}
-      >
+      <div className="App">
         <Header titulo="Tu boleto seguro al lugar que quieras" />
 
         <Routes>
-          <Route path="/" element={<Landing/>} />
+          <Route path="/" element={<Landing />} />
           <Route path="/vuelos" element={<FlightListContainer />} />
           <Route path="/detail/:id" element={<FlightDetailContainer />} />
           <Route path="/*" element={<Navigate to="/" replace />} />
