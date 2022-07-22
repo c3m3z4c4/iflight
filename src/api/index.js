@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const clientId = import.meta.env.CLIENT_ID;
-const clienteSecret = import.meta.env.CLIENT_SECRET;
+const clientId = import.meta.env.VITE_CLIENT_ID;
+const clienteSecret = import.meta.env.VITE_CLIENT_SECRET;
 const contentType = "application/x-www-form-urlencoded";
 let urlencoded = new URLSearchParams();
 
