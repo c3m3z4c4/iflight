@@ -12,7 +12,6 @@ function App() {
     <BrowserRouter>
       <div
         className="App"
-        style={{ backgroundImage: `url('/assets/IFlight Logo/vuelo.jpg')` }}
       >
         <Header titulo="Tu boleto seguro al lugar que quieras" />
 
