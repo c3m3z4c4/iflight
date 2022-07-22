@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom'
 import "./Flight.css"
 
-function Flight({origin, destination, price}) {
+function Flight({flight}) {
   return (
     <div className="flight-container">
         <div className="flight">
@@ -9,7 +10,7 @@ function Flight({origin, destination, price}) {
               <div className="origin-flight">
                 <p>Ida:</p>
                 <div className="origin-init">
-                  <div>{origin}</div>
+                  <div>{flight.inicio}</div>
                   <div> 20:06</div>
                 </div>
                 <div className="origin-route">
@@ -18,7 +19,7 @@ function Flight({origin, destination, price}) {
                   <p>Sin escalas</p>
                 </div>
                 <div className="origin-fin">
-                  <div>{destination}</div>
+                  <div>{flight.final}</div>
                   <div> 07:05</div>
                 </div>
                 {/* <p>Escala</p>
@@ -27,7 +28,7 @@ function Flight({origin, destination, price}) {
               <div className="destination-flight">
                 <p>Reg:</p>
                 <div className="destination-init">
-                  <div>{destination}</div>
+                  <div>{flight.final}</div>
                   <div> 18:00</div>
                 </div>
                 <div className="origin-route">
@@ -36,7 +37,7 @@ function Flight({origin, destination, price}) {
                   <p>Sin escalas</p>
                 </div>
                 <div className="destination-fin">
-                  <div>{origin}</div>
+                  <div>{flight.inicio}</div>
                   <div> 04:42</div>
                 </div>
                 {/* <p>Escala</p> */}
@@ -49,8 +50,10 @@ function Flight({origin, destination, price}) {
             {/* <p>Moneda</p> */}
             {/* <p>Precio</p>
             <p>Impuestos</p> */}
-            <div>${price}</div>
+            <div>${flight.price}</div>
+            <Link to={`/detail/${flight.id}`}>
             <button>Seleccionar</button>
+            </Link>
           </div>
         </div>
         

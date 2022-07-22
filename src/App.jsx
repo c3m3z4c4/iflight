@@ -16,7 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Landing />} />
           <Route path="/vuelos" element={<FlightListContainer />} />
-          <Route path="/vuelos/detalle" element={<FlightDetailContainer />} />
+          <Route path="/detail/:id" element={<FlightDetailContainer />} />
           <Route path="/*" element={<Navigate to="/" replace />} />
         </Routes>
       </div>

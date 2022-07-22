@@ -1,6 +1,7 @@
 import FlightDetail from "../FlightDetail/FlightDetail"
 import {flights} from "../../data/data"
 import { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 
 
@@ -19,9 +20,10 @@ import { useEffect, useState } from "react";
       
         const [flight, setFlight] = useState([]);
         const[loading, setLoading] = useState([true]);
+        const {id} = useParams()
       
         useEffect(() =>{
-          findFlight("1")
+          findFlight(id)
           .then((resp) =>{setFlight(resp)})
           .catch((err) =>{console.log(err)})
           .finally(() => setLoading(false))
@@ -29,7 +31,7 @@ import { useEffect, useState } from "react";
       
   return (
     <div>    
-         {loading ? <h2>Cargando...</h2> : (<FlightDetail id={flight.id} origin={flight.inicio} destination={flight.final} price={flight.price}/>)}
+         {loading ? <h2>Cargando...</h2> : (<FlightDetail flight={flight}/>)}
     </div>
   )
 }

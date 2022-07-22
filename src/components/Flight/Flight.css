@@ -9,6 +9,7 @@
     margin: 15px;
     border: 1px solid #B4C5E4;
     border-radius: 8px;
+    background-color: white;
 }
 
 .travel-flight {
@@ -49,7 +50,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 180px;
+    width: 200px;
     border-left: 1px solid rgb(221, 221, 221);   
 }
 

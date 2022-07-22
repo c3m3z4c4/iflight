@@ -1,7 +1,7 @@
 
 import "./FlightDetail.css"
 
-function FlightDetail({origin, destination, price}) {
+function FlightDetail({flight}) {
   return (
     <div className="detail-container">
         <h2>Tu vuelo seleccionado:</h2>
@@ -9,7 +9,7 @@ function FlightDetail({origin, destination, price}) {
           <p>Vuelo de ida: fecha de ida </p>
           <div className="flight-origin">
             <div className="origin-init-detail">
-                 <div>{origin}</div>
+                 <div>{flight.inicio}</div>
                  <div> 20:06</div>
             </div>
             <div className="origin-route-detail">
@@ -18,7 +18,7 @@ function FlightDetail({origin, destination, price}) {
                   <p>Sin escalas</p>
             </div>
             <div className="origin-fin-detail">
-                  <div>{destination}</div>
+                  <div>{flight.final}</div>
                   <div> 07:05</div>
             </div>
           </div>
@@ -27,7 +27,7 @@ function FlightDetail({origin, destination, price}) {
             <p>Vuelo de vuelta: fecha de vuelta </p>
             <div className="flight-destination">
               <div className="destination-init-detail">
-                <div>{destination}</div>
+                <div>{flight.final}</div>
                 <div> 18:00</div>
               </div>
             <div className="destination-route-detail">
@@ -36,12 +36,12 @@ function FlightDetail({origin, destination, price}) {
                   <p>Sin escalas</p>
            </div>
            <div className="destination-fin-detail">
-                  <div>{origin}</div>
+                  <div>{flight.inicio}</div>
                   <div> 04:42</div>
           </div>
         </div>
         <div>
-            <p>Precio total ${price}</p>
+            <p>Precio total ${flight.price}</p>
         </div>
     </div>
     </div>
