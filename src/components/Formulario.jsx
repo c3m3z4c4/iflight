@@ -1,24 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Swal from "sweetalert2";
-import { Grid } from "@mui/material";
+import { Grid, Autocomplete, TextField } from "@mui/material";
 import { authToken, apiCall } from "../api/index";
-import { useDispatch } from 'react-redux';
-import {addSearchItem, fetchFlightList } from '../redux/actions/flightList';
-
+import { useDispatch } from "react-redux";
+import { addSearchItem, fetchFlightList } from "../redux/actions/flightList";
+import { countries } from "../data/data";
 
 
 const Formulario = () => {
   const [formularioEnviado, cambiarFormularioEnviado] = useState(false);
   const dispatch = useDispatch();
 
-  // useEffect(() => {
-  //   // authToken();
-  //   // apiCall();
-  //   dispatch(fetchFlightListStart());
-  // }, []);
+  useEffect(() => {
+    console.log(countries);
+  }, []);
 
   return (
     <>
@@ -72,8 +70,7 @@ const Formulario = () => {
               return errores;
             }}
             onSubmit={(values) => {
-
-              // console.log(values);
+              console.log(values);
               console.log("Formulario enviado");
               cambiarFormularioEnviado(true);
               setTimeout(() => cambiarFormularioEnviado(false), 4000);
@@ -85,11 +82,12 @@ const Formulario = () => {
               <Form className="formulario">
                 <div>
                   <label htmlFor="origen">*Origen</label>
-                  <Field
-                    type="text"
-                    id="origen"
-                    name="origen"
-                    placeholder="¿Cuál es tú ubicación?"
+                  <Autocomplete
+                    id="combo-box-origen"
+                    options={countries}
+                    getOptionLabel={(option) => `${option.name}`}
+                    renderInput={(params) => <TextField {...params} label="" />}
+                    onChange={(e, value) => setFieldValue("origen", value.code)}
                   />
 
                   <ErrorMessage
@@ -102,11 +100,14 @@ const Formulario = () => {
 
                 <div>
                   <label htmlFor="destino">*Destino</label>
-                  <Field
-                    type="text"
-                    id="destino"
-                    name="destino"
-                    placeholder="¿Dónde?"
+                  <Autocomplete
+                    id="combo-box-destino"
+                    options={countries}
+                    getOptionLabel={(option) => `${option.name}`}
+                    renderInput={(params) => <TextField {...params} label="" />}
+                    onChange={(e, value) =>
+                      setFieldValue("destino", value.code)
+                    }
                   />
                   <ErrorMessage
                     name="destino"
